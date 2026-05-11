@@ -1,0 +1,126 @@
+/* MAIN CONTAINER */
+#chatAppContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+#chatAppHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #0f172a;
+  color: white;
+}
+
+#chatUsername {
+  font-size: 16px;
+}
+
+#chatLogoutBtn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
+
+#chatLogoutBtn:hover {
+  background: #dc2626;
+}
+
+/* CHAT AREA */
+#chatMessagesContainer {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* MESSAGE ROW */
+.chatMessageRow {
+  display: flex;
+}
+
+/* USER RIGHT */
+.chatUserRow {
+  justify-content: flex-end;
+}
+
+/* AI LEFT */
+.chatAiRow {
+  justify-content: flex-start;
+}
+
+/* BUBBLE */
+.chatBubble {
+  max-width: 60%;
+  padding: 12px 16px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* USER STYLE */
+.chatUserRow .chatBubble {
+  background: #2563eb;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+/* AI STYLE */
+.chatAiRow .chatBubble {
+  background: #e2e8f0;
+  color: black;
+  border-bottom-left-radius: 5px;
+}
+
+/* INPUT AREA */
+#chatInputContainer {
+  display: flex;
+  padding: 15px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+/* INPUT */
+#chatInputField {
+  flex: 1;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+/* BUTTON */
+#chatSendBtn {
+  margin-left: 10px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+#chatSendBtn:hover {
+  background: #1e40af;
+}
+
+/* SCROLLBAR */
+#chatMessagesContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+#chatMessagesContainer::-webkit-scrollbar-thumb {
+  background: #cbd5f5;
+  border-radius: 10px;
+}
